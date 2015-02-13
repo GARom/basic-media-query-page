@@ -76,7 +76,7 @@ a:hover, a:active{
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  overflow: hidden; /*The overflow property specifies what to do if the content of an element exceeds the size of the element's box.*/
+   /*The overflow property specifies what to do if the content of an element exceeds the size of the element's box.*/
 }
 
 .content {
@@ -103,19 +103,31 @@ a:hover, a:active{
 }
 
 .top-sidebar {
-  width: 25%;
+  width: 21%; /*the width+margin left+padding fit because the .content already has a width of 70%*/
   float: left;
   background-color: #FFF;
+  border-radius: 5px;
+  -webkit-border-radius: 5px; /*don't need webkit for css3*/
+  -moz-border-radius: 5px;
+  margin-left: 3%;
+  margin-bottom: 2%; /*this makes sure .top-sidebar/.middle-sidebar/.bottom-sidebar are spaced from the bottom*/ 
+  padding: 2% 3%;
 }
 
 .middle-sidebar {
-  width: 25%;
+  width: 21%;/*the width+margin left+padding fit because the .content already has a width of 70%*/
   float: left;
   background-color: #FFF;
+  margin-left: 3%;
+  margin-bottom: 2%; /*this makes sure .top-sidebar/.middle-sidebar/.bottom-sidebar are spaced from the bottom*/ 
+  padding: 2% 3%;
 }
 
 .bottom-sidebar {
-  width: 25%;
+  width: 21%;/*the width+margin left+padding fit because the .content already has a width of 70%*/
   float: left;
   background-color: #FFF;
+  margin-left: 3%;
+  margin-bottom: 2%; /*this makes sure .top-sidebar/.middle-sidebar/.bottom-sidebar are spaced from the bottom*/ 
+  padding: 2% 3%;
 }
