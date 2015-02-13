@@ -1,6 +1,8 @@
 
 body {
   background-color: #999; /*this is black font*/
+  background-size: 100%;
+  background-repeat: repeat;
   font-size: 87.5%; /*Base font size is 14px?*/
   font-family: Arial, 'Lucida Sans Unicode';
   line-height: 1.5;
@@ -12,11 +14,12 @@ a {
 }
 
 a:link, a:visited {
-
+  color: #CF5C3F; /*Changes the First Post/Second Post link colors to orange*/
 }
 
 a:hover, a:active{
-
+  background-color: #CF5C3F; /*Changes the First Post/Second Post link colors to orange*/
+  color: #FFF;
 }
 
 .body{
@@ -96,7 +99,7 @@ a:hover, a:active{
 .bottomcontent{
     background-color: #FFF;
     border-radius: 5px;
-  -webkit-border-radius: 5px; /*don't need webkit for css3*/
+  -webkit-border-radius: 5px; /*makes the corners round, in chrome you only need border-radius/-webkit-border radius*/
   -moz-border-radius: 5px;
   padding: 3% 5%; /*padding: 3% increased the top/bottom white area but 5% only centered the font*/
   margin-top: 2%; /*prevents from .topcontent bottom-border*/
@@ -107,8 +110,9 @@ a:hover, a:active{
   float: left;
   background-color: #FFF;
   border-radius: 5px;
-  -webkit-border-radius: 5px; /*don't need webkit for css3*/
+  -webkit-border-radius: 5px; /*makes the corners round, in chrome you only need border-radius/-webkit-border radius*/
   -moz-border-radius: 5px;
+  margin-top: 2%;
   margin-left: 3%;
   margin-bottom: 2%; /*this makes sure .top-sidebar/.middle-sidebar/.bottom-sidebar are spaced from the bottom*/ 
   padding: 2% 3%;
@@ -118,6 +122,9 @@ a:hover, a:active{
   width: 21%;/*the width+margin left+padding fit because the .content already has a width of 70%*/
   float: left;
   background-color: #FFF;
+    border-radius: 5px;
+  -webkit-border-radius: 5px; /*makes the corners round, in chrome you only need border-radius/-webkit-border radius*/
+  -moz-border-radius: 5px;
   margin-left: 3%;
   margin-bottom: 2%; /*this makes sure .top-sidebar/.middle-sidebar/.bottom-sidebar are spaced from the bottom*/ 
   padding: 2% 3%;
@@ -127,7 +134,26 @@ a:hover, a:active{
   width: 21%;/*the width+margin left+padding fit because the .content already has a width of 70%*/
   float: left;
   background-color: #FFF;
+  border-radius: 5px;
+  -webkit-border-radius: 5px; /*makes the corners round, in chrome you only need border-radius/-webkit-border radius*/
+  -moz-border-radius: 5px;
   margin-left: 3%;
   margin-bottom: 2%; /*this makes sure .top-sidebar/.middle-sidebar/.bottom-sidebar are spaced from the bottom*/ 
   padding: 2% 3%;
+}
+
+.mainFooter {
+  width: 100%;
+  float: left;
+  border-radius: 5px;
+  -webkit-border-radius: 5px; /*makes the corners round, in chrome you only need border-radius/-webkit-border radius*/
+  -moz-border-radius: 5px;
+  background-color: #666;
+  margin-top: 2%;
+  margin-bottom: 2%; /*Or you can write margin: 2% 0 as in 2% left/right 0 top/bottom*/
+}
+
+.mainFooter p {
+  width: 92%;
+  margin: 2% auto;
 }
